@@ -4,17 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!--FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
   <!-- SWIPING FUNCTIONALITY-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!-- STYLES -->
-  <link rel="stylesheet" href="style-overview.css">
   <link rel="stylesheet" href="style-global.css">
+  <link rel="stylesheet" href="style-overview.css">
   <link rel="stylesheet" href="style-index.css">
-
   <!-- TITLE -->
   <title>RUFUS DESIGN - OVERVIEW</title>
 </head>
@@ -22,12 +18,8 @@
 <body>
   <!-- LOADER VIDEO -->
   <section class="hero">
-    <video  id="hero-video-desktop" autoplay muted playsinline onended="handleVideoEnd()">
-      <source src="Images/Hero section backgrounds/RUFUS-DESIGN_1.mp4" type="video/webm"> 
-    </video>
-
-    <video  id="hero-video-mobile" autoplay muted playsinline onended="handleVideoEnd()">
-      <source src="Images/Hero section backgrounds/RUFUS-DESIGN_1_MOBILE.mp4" type="video/webm">
+    <video id="hero-video-desktop" autoplay muted playsinline onended="handleVideoEnd()">
+      <source src="Images/Hero section backgrounds/RUFUS-DESIGN_1.mp4" type="video/mp4">
     </video>
   </section>
 
@@ -39,17 +31,18 @@
           <a class="nav-bar-RUFUS-DESIGN">RUFUS DESIGN</a>
         </div>
         <div class="nav-middle">
-            <a href="/overview.html" id="index-overview-button">OVERVIEW</a>
+            <a href="/index.html" id="index-overview-button">OVERVIEW</a>
             <a href="/selected.html">SELECTED</a>
         </div>
 
-        <span class="spacer" style="flex:1;"></span>
+        <span class="spacer"></span>
 
         <div>
-        <a href="/about.html">ABOUT</a>
+        <a href="/about.html">ART DIRECTION & DESIGN</a>
         </div>
       </nav>
     </header>
+
 
     <main id="swup" class="transition-fade">
     <!-- GALLERY MODAL -->
@@ -60,12 +53,15 @@
                 <button class="close-button"></button>
 
                 <div class="gallery-img-container">
+                        <!-- Image -->
                     <img class="gallery-img" src="" alt="Gallery Image">
                         <!-- Thumbnails row -->
                     <div class="gallery-thumbnails"></div>
                 </div>
             </div>
         </div>
+
+
     <!-- OVERVIEW CONTENT -->
         <div id="wrapper">
           <div id="content">
@@ -350,8 +346,70 @@
                   <img src="Images/ALL WORKS/**E_TakanoSalad/salad-book-0.jpg" alt="Art 40">
                   <h5>editorial - XX年XX月</h5>
                 </div>
-
               </div>
+
+              <div class="grid-wrapper" id="bottom-grid-wrapper">
+                <h1>And more...<h1>
+                <div class="grid-item" data-gallery-id="">
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 41">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 42">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 43">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 44">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 45">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 46">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 47">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 47">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 49">
+                  <h5></h5>
+                </div>
+
+                <div class="grid-item" data-gallery-id=""> 
+                  <h1><h1>
+                  <img src="Images/ALL WORKS/RUFUS-YT.jpg" alt="Art 50">
+                  <h5></h5>
+                </div>
+              </div>
+
             </section>
 
           </div>
@@ -362,7 +420,7 @@
 
 
   <!--SCRIPT-->
-  <!-- <script src="script-global.js"></script> -->
-  <script src="script-index.js"></script>
+  <script src="script-global.js"></script>
+  <script src="script-index.js" defer></script>
 </body>
 </html>
